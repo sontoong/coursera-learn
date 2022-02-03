@@ -1,3 +1,19 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* HEADER  */
+
+#header-nav {
+    background-color: wheat;
+    border-radius: 0;
+    border: 0;
+}
+
+#banner {
+    background: url('../images/JermaSus.jpg') no-repeat;
+    width: 1200px;
+    height: 100px;
+    margin: 0;
 }

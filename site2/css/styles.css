@@ -11,9 +11,39 @@ body {
     border: 0;
 }
 
-#banner {
+#logo-img {
     background: url('../images/JermaSus.jpg') no-repeat;
-    width: 1200px;
+    width: 100px;
     height: 100px;
-    margin: 0;
+    margin: 10px 15px 10px 0px;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    color: tomato;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: -35px -52px 5px black;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;  
+}
+
+.navbar-brand p {
+    color: #000;
+    text-transform: uppercase;
+    font-size: .69em;
+    margin-top: 15px;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
 }

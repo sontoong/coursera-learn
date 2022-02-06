@@ -3,8 +3,6 @@ body {
     font-size: 16px;
 }
 
-/* HEADER  */
-
 #header-nav {
     background-color: wheat;
     border-radius: 0;
@@ -13,28 +11,28 @@ body {
 
 #logo-img {
     background: url('../images/JermaSus.jpg') no-repeat;
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: 10vw;
     margin: 10px 15px 10px 0px;
 }
 
 .navbar-brand {
     padding-top: 25px;
 }
-
-.navbar-brand h1 {
+/* the title thing dwadfeaffeaf */
+.navbar-brand h1 { 
     color: tomato;
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: -35px -52px 5px black;
+    text-shadow: -25px 12px 5px black;
     margin-top: 0;
     margin-bottom: 0;
     line-height: .75;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
-    text-decoration: none;  
+a {
+    text-decoration: none !important;  
 }
 
 .navbar-brand p {
@@ -45,5 +43,69 @@ body {
 }
 
 .navbar-brand p span {
+    font-family: 'Noto Sans JP', sans-serif;
     vertical-align: middle;
+}
+
+#nav-list {
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+/* button {
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+/* the 3 things on the right */
+li div {
+    text-align: center;
+    clear: both;
+}
+
+#nav-list a {
+    color: blue;
+    text-align: center;
+    font-size: 1.8em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav-list .boxfill:hover {
+    background: whitesmoke;
+}
+
+#phone {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#phone a {
+    text-align: right;
+    padding-bottom: 0;
+}
+
+#phone div {
+    font-size: 1.5em;
+    color: red;
+    text-align: right;
+    padding-right: 15px;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+
+    .navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+
+    #nav-list a svg {
+        width: 5vw;
+        height: 5vw;
+    }
 }

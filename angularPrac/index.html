@@ -9,9 +9,29 @@
     <script src="app.js"></script>
 </head>
 <body>
+    <h1>Number Generator From Name</h1>
     <div ng-controller="myFirstController">
+        <input type="text" ng-model="name" ng-keyup="displayNumber()">
+        &lt;&lt; a special name id: {{nameNumber}}
+        <br>
 
-        
+        <button type="button" ng-click="upper()">upper case me!</button>
+        <br>
+
+        <h2>In reverse</h2>
+        <input type="text" ng-model="number" ng-keyup="displayName()">
+        &gt;&gt; your name here: {{numberName}}
+        <br>
+
+        <div style="float: right; margin-top: 15px; font-weight: bold; font-size: large;">here's a picture of jerma</div>
+
+        <button style="clear: right; float: right;" ng-click="changeState()">{{buttonState}}</button>
+
+        <img style="float: right; margin: auto;" ng-src="images/{{state}}.jpg" width="250px">
+        <br>
+
+        <!-- <button ng-click="log()">log</button> -->  
+        <div>{{status()}}</div>
     </div>
 </body>
 </html>

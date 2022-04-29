@@ -12,6 +12,8 @@ DIController.$inject= ['$scope', '$filter'];
         $scope.number= "type random numbers"
         $scope.numberName= "..."
 
+        $scope.caseState= "upper case me!"
+
         $scope.displayNumber= function () {
             var totalNameValue= calculateNumberFromString($scope.name);
             $scope.nameNumber= totalNameValue;
@@ -41,6 +43,22 @@ DIController.$inject= ['$scope', '$filter'];
             $scope.name= upCase($scope.name);
         }
 
+        $scope.lower= function () {
+            var lowCase= $filter('lowercase');
+            $scope.name= lowCase($scope.name);
+        }
+ 
+        $scope.changeCase= function () {
+            if ($scope.name=== $filter('uppercase')($scope.name)) {
+                $scope.lower();
+                $scope.caseState= "upper case me!"
+            }
+            else {
+                $scope.upper();
+                $scope.caseState= "lower me now!"
+            }
+        }
+
         $scope.state= "notSus";
         $scope.buttonState= "pig";
         $scope.changeState= function () {
@@ -53,7 +71,7 @@ DIController.$inject= ['$scope', '$filter'];
             }
         }
 
-        $scope.status= function (state) {
+        $scope.status= function () {
             if ($scope.state== "sus") {
                 return "ඞ"
             }
